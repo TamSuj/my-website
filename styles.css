@@ -59,7 +59,18 @@ header ul li {
     padding-right: 30px; /* Space out banner link */
 }
 header ul li:hover a{
-    color: #2c9bd7;
+    background-image: linear-gradient(45deg, #9E768F, #8EC9BB);
+  
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 header ul li a {
     position: relative;
@@ -109,6 +120,7 @@ header.sticky ul li a{
     text-align: left;
     list-style-type: none;
 }
+
 .wrapper body {
     margin: 0;
     padding: 0;
@@ -226,6 +238,14 @@ header.sticky ul li a{
     align-self: center;
 }
 .aboutme h2 {
+    padding: 30px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.contact h2 {
     padding: 30px;
     width: 100%;
     margin: 0;
