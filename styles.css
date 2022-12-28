@@ -41,7 +41,7 @@ header img {
 }
 header.sticky {
     position: fixed;
-    padding: .3vw 20vw;
+    padding: 2vw 20vw;
     background-image: linear-gradient(to right, #9E768F, #9FA4C4); 
 }
 header ul{
@@ -79,7 +79,7 @@ header ul li a {
     transition: .6s;
 }
 header.sticky .logo img{
-    height: 60px;
+    height: 0px;
 }
 header.sticky ul li:hover a{
     font-size: 1.1em;
@@ -187,7 +187,7 @@ header.sticky ul li a{
 .scroll {
     position: relative;
     text-align: center;
-    padding-top: 90vh;
+    padding-top: 87vh;
     font-size: 18px;
     font-weight: 200px;
 }
@@ -337,6 +337,9 @@ header.sticky ul li a{
     font-size: 18px;
     font-weight: 200px;
     text-align: center;
+}
+.resume-link span{
+    color: #129cd7;
 }
 
 /* Expand the box
