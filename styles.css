@@ -61,18 +61,21 @@ header ul li {
     padding-right: 30px; /* Space out banner link */
 }
 header ul li:hover a{
-    background-image: linear-gradient(45deg, #9E768F, #8EC9BB);
+    font-size: 1.1em;
+    color: #0077b5;
+
+    /* background-image: linear-gradient(45deg, #2c2c2c, #cacaca); */
   
     /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
+    /* background-size: 100%;
+    background-repeat: repeat; */
   
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
 }
 header ul li a {
     position: relative;
@@ -143,7 +146,7 @@ header.sticky ul li a{
     align-items: center;
     justify-content: center;
     display: flex;
-    font-size: 30px;
+    font-size: 33px;
 }
 .wrapper {
     display: inline-flex;
@@ -154,7 +157,7 @@ header.sticky ul li a{
 .wrapper .dynamic-texts {
     padding-left: 10px;
     line-height: 35px;
-    height: 35px;
+    height: 33px;
     overflow: hidden;
 }
 .dynamic-texts li {
@@ -163,11 +166,11 @@ header.sticky ul li a{
     position: relative;
     top: 0%;
     bottom: 0%;
-    animation: slide 10s steps(4) infinite;
+    animation: slide 24s steps(8) infinite;
 }
 @keyframes slide {
     100% {
-        top: -140px;
+        top: -282px;
     }
 }
 .dynamic-texts li span {
@@ -181,13 +184,21 @@ header.sticky ul li a{
     width: 100%;
     background: rgb(255, 255, 255);
     border-left: 2px solid #FC6D6D; 
-    animation: typing 2.5s steps(22) infinite;
+    animation: typing 3.0s steps(26) infinite;
 }
 @keyframes typing {
     100% {
         left: 100%;
         margin: 0 -20px 0 25px;
     }
+}
+.side-bar-icon {
+    padding-left: 20px;
+
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    transition: 0.3s;;
 }
 .scroll {
     position: relative;
@@ -238,9 +249,7 @@ header.sticky ul li a{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-    filter: contrast(4);
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
+    filter: contrast(1.1);
     transition: 0.5s ease;
 
 
@@ -376,19 +385,274 @@ header.sticky ul li a{
     margin: 0, 8px;
     transition: .7s;
 }
-.footer .social a:hover{
+/* .footer .social a:hover{
     color: #ffffff;
     background-color: #09203F;
+} */
+.footer .social a:hover{
+    color: #ffffff;
+    background-color: #171515;
 }
+
 .footer ul li {
     text-align: center;
     align-items: center;
     display: flex;
     text-decoration: none;
 }
-/* Expand the box
+/* Expand the box */
 .box:nth-child(1) {
     grid-column: span 2;
     grid-row: span 1;
 }
- */
+
+.three-d-container{
+    margin:30px auto 70px;
+    width:300px;
+    height:300px;
+    border-radius: 3px;
+    position:relative;
+    -webkit-perspective:1000px;
+       -moz-perspective:1000px;
+        -ms-perspective:1000px;
+         -o-perspective:1000px;
+            perspective:1000px;
+    /* -webkit-box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset;
+       -moz-box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset;
+            box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset; */
+    }
+    .three-d-cube{
+    width:100%;
+    height:100%;
+    position:absolute;
+    -webkit-transition:-webkit-transform 1s;
+       -moz-transition:   -moz-transform 1s;
+         -o-transition:     -o-transform 1s;
+            transition:        transform 1s;
+    -webkit-transform-style:preserve-3d;
+       -moz-transform-style:preserve-3d;
+        -ms-transform-style:preserve-3d;
+         -o-transform-style:preserve-3d;
+            transform-style:preserve-3d;
+    -webkit-transform:translateZ( -150px );
+       -moz-transform:translateZ( -150px );
+        -ms-transform:translateZ( -150px );
+         -o-transform:translateZ( -150px );
+            transform:translateZ( -150px );
+    }
+    .three-d-cube .three-d-item{
+    width:100%;
+    height:100%;
+    display:block;
+    margin:0;
+    position:absolute;
+    }
+    .three-d-cube .three-d-item img{
+    width:100%;
+    height:100%;
+    display:block;
+    margin:0;
+    }
+    .three-d-item:nth-child(1){
+    -webkit-transform:rotateY(   0deg ) translateZ( 150px );
+       -moz-transform:rotateY(   0deg ) translateZ( 150px );
+        -ms-transform:rotateY(   0deg ) translateZ( 150px );
+         -o-transform:rotateY(   0deg ) translateZ( 150px );
+            transform:rotateY(   0deg ) translateZ( 150px );
+    }
+    .three-d-item:nth-child(2){
+    -webkit-transform:rotateX( 180deg ) translateZ( 150px );
+       -moz-transform:rotateX( 180deg ) translateZ( 150px );
+        -ms-transform:rotateX( 180deg ) translateZ( 150px );
+         -o-transform:rotateX( 180deg ) translateZ( 150px );
+            transform:rotateX( 180deg ) translateZ( 150px );
+    }
+    .three-d-item:nth-child(3){
+    -webkit-transform:rotateY(  90deg ) translateZ( 150px );
+       -moz-transform:rotateY(  90deg ) translateZ( 150px );
+        -ms-transform:rotateY(  90deg ) translateZ( 150px );
+         -o-transform:rotateY(  90deg ) translateZ( 150px );
+            transform:rotateY(  90deg ) translateZ( 150px );
+    }
+    .three-d-item:nth-child(4){
+    -webkit-transform:rotateY( -90deg ) translateZ( 150px );
+       -moz-transform:rotateY( -90deg ) translateZ( 150px );
+        -ms-transform:rotateY( -90deg ) translateZ( 150px );
+         -o-transform:rotateY( -90deg ) translateZ( 150px );
+            transform:rotateY( -90deg ) translateZ( 150px );
+    }
+    .three-d-item:nth-child(5){
+    -webkit-transform:rotateX(  90deg ) translateZ( 150px );
+       -moz-transform:rotateX(  90deg ) translateZ( 150px );
+        -ms-transform:rotateX(  90deg ) translateZ( 150px );
+         -o-transform:rotateX(  90deg ) translateZ( 150px );
+            transform:rotateX(  90deg ) translateZ( 150px );
+    }
+    .three-d-item:nth-child(6){
+    -webkit-transform:rotateX( -90deg ) translateZ( 150px );
+       -moz-transform:rotateX( -90deg ) translateZ( 150px );
+        -ms-transform:rotateX( -90deg ) translateZ( 150px );
+         -o-transform:rotateX( -90deg ) translateZ( 150px );
+            transform:rotateX( -90deg ) translateZ( 150px );
+    }
+    .a:checked ~ .three-d-cube{
+    -webkit-transform:translateZ( -150px ) rotateY(    0deg );
+       -moz-transform:translateZ( -150px ) rotateY(    0deg );
+        -ms-transform:translateZ( -150px ) rotateY(    0deg );
+         -o-transform:translateZ( -150px ) rotateY(    0deg );
+            transform:translateZ( -150px ) rotateY(    0deg );
+    }
+    .b:checked ~ .three-d-cube{
+    -webkit-transform:translateZ( -150px ) rotateX( -180deg );
+       -moz-transform:translateZ( -150px ) rotateX( -180deg );
+        -ms-transform:translateZ( -150px ) rotateX( -180deg );
+         -o-transform:translateZ( -150px ) rotateX( -180deg );
+            transform:translateZ( -150px ) rotateX( -180deg );
+    }
+    .c:checked ~ .three-d-cube{
+    -webkit-transform:translateZ( -150px ) rotateY(  -90deg );
+       -moz-transform:translateZ( -150px ) rotateY(  -90deg );
+        -ms-transform:translateZ( -150px ) rotateY(  -90deg );
+         -o-transform:translateZ( -150px ) rotateY(  -90deg );
+            transform:translateZ( -150px ) rotateY(  -90deg );
+    }
+    .d:checked ~ .three-d-cube{
+    -webkit-transform:translateZ( -150px ) rotateY(   90deg );
+       -moz-transform:translateZ( -150px ) rotateY(   90deg );
+        -ms-transform:translateZ( -150px ) rotateY(   90deg );
+         -o-transform:translateZ( -150px ) rotateY(   90deg );
+            transform:translateZ( -150px ) rotateY(   90deg );
+    }
+    .e:checked ~ .three-d-cube{
+    -webkit-transform:translateZ( -150px ) rotateX(  -90deg );
+       -moz-transform:translateZ( -150px ) rotateX(  -90deg );
+        -ms-transform:translateZ( -150px ) rotateX(  -90deg );
+         -o-transform:translateZ( -150px ) rotateX(  -90deg );
+            transform:translateZ( -150px ) rotateX(  -90deg );
+    }
+    .f:checked ~ .three-d-cube{
+    -webkit-transform:translateZ( -150px ) rotateX(   90deg );
+       -moz-transform:translateZ( -150px ) rotateX(   90deg );
+        -ms-transform:translateZ( -150px ) rotateX(   90deg );
+         -o-transform:translateZ( -150px ) rotateX(   90deg );
+            transform:translateZ( -150px ) rotateX(   90deg );
+    }
+    .three-d-bullet{
+    margin:350px 10px 0 0;
+    float:left;
+    }
+    .three-d-bullet:first-child{
+    margin:350px 10px 0 88px;
+    }
+
+    .cute-button {
+        background-color: #a3a3a3; /* Light pink background */
+        border: none; /* Remove border */
+        color: white; /* White text color */
+        padding: 15px 32px; /* Some padding */
+        text-align: center; /* Center-aligned text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Make the element an inline-block */
+        font-size: 16px; /* Set the font size */
+        margin: 4px 2px; /* Add some margin */
+        cursor: pointer; /* Add a pointer cursor on hover */
+        border-radius: 50px; /* Rounded corners */
+        transition: all 0.3s ease; /* Add a smooth transition */
+      }
+      
+      .cute-button:hover {
+        background-color: #0077b5; /* Darker pink on hover */
+        transform: scale(1.1); /* Scale up the button on hover */
+      }
+      
+      .cute-button:active {
+        transform: translateY(3px); /* Push the button down on click */
+      }
+      
+      .social-icons {
+        position: fixed; /* Make the icons fixed */
+        top: 50%; /* Center vertically */
+        right: 0; /* Stick to the right side of the page */
+        transform: translateY(-50%); /* Center vertically */
+        display: flex; /* Use flexbox for vertical alignment */
+        flex-direction: column; /* Stack the icons vertically */
+        align-items: center; /* Center horizontally */
+        z-index: 1; /*Show the icons above other content*/
+      }
+      
+      .icon {
+        width: 50px; /* Set a width for the icons */
+        height: 50px; /* Set a height for the icons */
+        background-color: #333; /* Gray background color */
+        border-radius: 50%; /* Make the icons circular */
+        display: flex; /* Use flexbox for vertical and horizontal alignment */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin-bottom: 10px; /* Add some margin at the bottom */
+        transition: all 0.3s ease; /* Add a smooth transition */
+        position: sticky;
+      }
+      
+      .email-icon {
+        font-size: 23px;
+        color: white;
+        background-color: #FA6E4F; /* Facebook blue background color */
+      }
+      
+      .linkedin-icon {
+        font-size: 23px;
+        color: white;
+        background-color: #09203F; /* Twitter blue background color */
+      }
+      
+      .instagram-icon {
+        font-size: 23px;
+        color: white;
+        background-color: #c13584; /* Instagram pink background color */
+      }
+
+      .github-icon {
+        font-size: 23px;
+        color: white;
+        background-color: #000000; /* Instagram pink background color */
+      }
+      
+      .icon:hover {
+        transform: scale(1.1); /* Scale up the icons on hover */
+      }
+      
+      /* Media query to make the icons responsive */
+      @media (max-width: 767px) {
+        .social-icons {
+          top: auto; /* Remove the fixed positioning */
+          bottom: 0; /* Stick to the bottom of the page */
+          transform: none; /* Remove the translate */
+        }
+      }
+      
+      .minimal-footer {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text color */
+  text-align: center; /* Center-aligned text */
+  padding: 15px; /* Some padding */
+}
+
+.footer-icons {
+  margin: 10px 0; /* Add some margin */
+}
+
+.footer-icons a {
+  color: #fff; /* White text color */
+  font-size: 24px; /* Set the font size */
+  margin: 0 10px; /* Add some margin */
+  transition: all 0.3s ease; /* Add a smooth transition */
+}
+
+.footer-icons a:hover {
+  color: #eee; /* Lighter white on hover */
+}
+
+  
+      
+
+
