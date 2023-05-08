@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 *{
     font-family: 'Source Sans Pro', sans-serif;
     padding: 0;
@@ -6,7 +9,6 @@
 }
 body {
     min-height: 200vh;
-    scroll-behavior: smooth;
 }
 body a {
     text-decoration: none; 
@@ -26,7 +28,8 @@ header {
     transition: 1s;
     padding: 5px 5px; /* Need to be fixed */
     z-index: 1000000;
-    font-size: 20px;    
+    font-size: 19px;    
+    font-weight: 300px;
 }
 header .logo {
     /* position: relative;  */
@@ -48,7 +51,10 @@ header.sticky {
     position: fixed;
     /* padding: 2vw 30vw; */
     /* background-image: linear-gradient(to right, #9E768F, #9FA4C4);  */
-    background-image: linear-gradient(to right,#485563,#29323c); 
+    /* background-image: linear-gradient(to right,#ffffff,#cecece);  */
+    box-shadow: 0px 5px 10px 0px rgba(204, 203, 203, 0.5);
+    background-color: white;
+    /* border: #3c3c3c; */
 }
 header ul{
     position: relative;
@@ -91,23 +97,23 @@ header.sticky .logo img{
     height: 60px;
 } 
 header.sticky ul li:hover a{
-    font-size: 1.1em;
-    background-image: linear-gradient(45deg, #ffffff, #ffffff);
+    font-size: 1.05em;
+    /* background-image: linear-gradient(45deg, #000000, #000000); */
   
     /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
+    /* background-size: 100%;
+    background-repeat: repeat; */
   
     /* Use the text as a mask for the background. */
     /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; */
 }
 header.sticky ul li a{
     margin-left: 5px;
-    color: white;
+    color: rgb(32, 32, 32);
 }
 .cover-page {
     width: 100%;
@@ -167,7 +173,7 @@ header.sticky ul li a{
     position: relative;
     top: 0%;
     bottom: 0%;
-    animation: slide 24s steps(8) infinite;
+    animation: slide 32s steps(8) infinite;
 }
 @keyframes slide {
     100% {
@@ -185,7 +191,7 @@ header.sticky ul li a{
     width: 100%;
     background: rgb(255, 255, 255);
     border-left: 2px solid #FC6D6D; 
-    animation: typing 3.0s steps(26) infinite;
+    animation: typing 4.0s steps(18) infinite;
 }
 @keyframes typing {
     100% {
@@ -208,6 +214,16 @@ header.sticky ul li a{
     font-size: 18px;
     font-weight: 200px;
 }
+
+.about-img {
+    color: #575757;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    font-weight: 200px;
+    padding-top: 15px;
+}
+
 .aboutme {
     align-items: center;
     text-align: center;
@@ -339,8 +355,8 @@ header.sticky ul li a{
     font-size: 1.1em;
 }
 ::selection {
-    background: white;
-    color: #7d94b5;
+    background: #7d94b5;
+    color: white;
 }
 .box {
     background: #f2eeee; /* BG color */
@@ -401,6 +417,15 @@ header.sticky ul li a{
     display: flex;
     text-decoration: none;
 }
+.topic{
+    padding: 20px 0 2px 0;
+
+}
+
+.topic:nth-child(1){
+    /* background-color: rgb(186, 136, 237); */
+}
+
 /* Expand the box */
 .box:nth-child(1) {
     grid-column: span 2;
@@ -653,7 +678,220 @@ header.sticky ul li a{
   color: #eee; /* Lighter white on hover */
 }
 
-  
-      
+.about-tammy {
+    /* background-image: linear-gradient(to right, #9E768F, #9FA4C4);  */
+    /* background-image: linear-gradient(to right, #afafaf, #ffffff);  */
+    padding-top: 5%;
+    display: flex;
+    height: 90vh;
+    justify-content:space-around;
+
+    font-size: 17px;
+}
+
+.white-box
+{
+   width: 55vh;
+   line-height: 35px;
+}
 
 
+
+.avatar {
+    max-width: 200px;
+    max-height: 200px;
+    border:rgb(255, 255, 255) 2px;
+    /* border-radius: 77px; */
+    border-radius: 50%;
+
+    margin: 25px 30% 15% 30%;
+    transition: .6s;
+}
+
+.avatar:hover {
+    transform: translateY(3px); 
+    max-width: 210px;
+    max-height: 210px;
+}
+
+.pic-row{
+    align-items: center;
+    margin: 80px 20px auto 20px;
+}
+
+.pic-row img{
+    max-height: 90px;
+    transition: .7s;
+}
+
+.img-each:hover{
+    max-height: 130px;
+    box-shadow: 0px 5px 10px 0px rgba(204, 203, 203, 0.5);
+}
+
+.stars {
+    font-size: 20px;
+}
+
+.Experience {
+    min-height: 115vh;
+    background-image: url(image/bg.png);
+}
+
+.experience-head {
+    display: block;
+    width: 100%;
+    padding-top: 4%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px 0px rgb(221, 221, 221);
+    z-index: 1;
+}
+
+.experience-logo {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5% 10% 0 10%;
+}
+
+.experience-about {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 3% 5% 0 5%;
+}
+
+.company-logo {
+    z-index: 99;
+    max-width: 50px;
+    align-items: center;
+    margin: 24px auto auto 20px ;
+}
+
+.card {
+    width: 210px;
+    height: 130px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px 0px rgb(221, 221, 221);
+    justify-content: center;
+    transition: .4s;
+    z-index: 80;
+
+}
+
+.card:hover{
+    height: 525px;
+}
+
+.hidden-text {
+    color: #6e6e6e;
+    opacity: 0;
+    transition: .6s;
+    font-size: 16px;
+}
+
+.hidden-text p {
+    transform: translateY(-150px);
+}
+
+.hidden-text:hover{ 
+    padding: 15px 0 0 0;
+    opacity: 1;
+}
+
+.card-about {
+    width: 210px;
+    padding: 17px 15px 15px 15px;
+    color: #383838;
+    line-height: 28px;
+    z-index: 9999;
+}
+
+.card-about h3 {
+    font-size: 19px;
+    color: black;
+    font-weight: 600;
+    /* margin-bottom: 5px;
+    margin-top: 10px; */
+    margin: 2% 2% 2% 2%;
+}
+
+.card-about h4 {
+    font-size: 15.5px;
+    color: rgb(128, 128, 128);
+    font-weight: 400;
+    margin: 2% 2% 2% 2%;
+}
+
+.card-about p{
+    padding-bottom: 7px;
+}
+
+.circle {
+    padding: 0 4px;
+}
+
+.red {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px 0 0 10px;
+
+    background-color: #ff605c;
+}
+
+.yellow {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px 0 0 20px;
+
+    background-color: #ffbd44;
+}
+
+.green {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 10px 0 0 20px;
+
+    background-color: #00ca4e;
+}
+
+.learn-more {
+    z-index: 1;
+    color: rgb(128, 128, 128);
+    text-align: center;
+    margin: 2% auto 0 auto;
+}
+
+.portfolio {
+    min-height: 90vh;
+}
+
+.hidden {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 90vh;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 1s;
+}
+
+.show {
+    opacity: 1;
+}
