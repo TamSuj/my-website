@@ -433,230 +433,230 @@ header.sticky ul li a{
 }
 
 .three-d-container{
-    margin:30px auto 70px;
-    width:300px;
-    height:300px;
-    border-radius: 3px;
-    position:relative;
-    -webkit-perspective:1000px;
-       -moz-perspective:1000px;
-        -ms-perspective:1000px;
-         -o-perspective:1000px;
-            perspective:1000px;
-    /* -webkit-box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset;
-       -moz-box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset;
-            box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset; */
+margin:30px auto 70px;
+width:300px;
+height:300px;
+border-radius: 3px;
+position:relative;
+-webkit-perspective:1000px;
+    -moz-perspective:1000px;
+    -ms-perspective:1000px;
+        -o-perspective:1000px;
+        perspective:1000px;
+/* -webkit-box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset;
+    -moz-box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset;
+        box-shadow:0 20px 60px rgba(0,0,0,0.2),			  			  0 0 40px rgba(0,0,0,0.2) inset; */
+}
+.three-d-cube{
+width:100%;
+height:100%;
+position:absolute;
+-webkit-transition:-webkit-transform 1s;
+    -moz-transition:   -moz-transform 1s;
+        -o-transition:     -o-transform 1s;
+        transition:        transform 1s;
+-webkit-transform-style:preserve-3d;
+    -moz-transform-style:preserve-3d;
+    -ms-transform-style:preserve-3d;
+        -o-transform-style:preserve-3d;
+        transform-style:preserve-3d;
+-webkit-transform:translateZ( -150px );
+    -moz-transform:translateZ( -150px );
+    -ms-transform:translateZ( -150px );
+        -o-transform:translateZ( -150px );
+        transform:translateZ( -150px );
+}
+.three-d-cube .three-d-item{
+width:100%;
+height:100%;
+display:block;
+margin:0;
+position:absolute;
+}
+.three-d-cube .three-d-item img{
+width:100%;
+height:100%;
+display:block;
+margin:0;
+}
+.three-d-item:nth-child(1){
+-webkit-transform:rotateY(   0deg ) translateZ( 150px );
+    -moz-transform:rotateY(   0deg ) translateZ( 150px );
+    -ms-transform:rotateY(   0deg ) translateZ( 150px );
+        -o-transform:rotateY(   0deg ) translateZ( 150px );
+        transform:rotateY(   0deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(2){
+-webkit-transform:rotateX( 180deg ) translateZ( 150px );
+    -moz-transform:rotateX( 180deg ) translateZ( 150px );
+    -ms-transform:rotateX( 180deg ) translateZ( 150px );
+        -o-transform:rotateX( 180deg ) translateZ( 150px );
+        transform:rotateX( 180deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(3){
+-webkit-transform:rotateY(  90deg ) translateZ( 150px );
+    -moz-transform:rotateY(  90deg ) translateZ( 150px );
+    -ms-transform:rotateY(  90deg ) translateZ( 150px );
+        -o-transform:rotateY(  90deg ) translateZ( 150px );
+        transform:rotateY(  90deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(4){
+-webkit-transform:rotateY( -90deg ) translateZ( 150px );
+    -moz-transform:rotateY( -90deg ) translateZ( 150px );
+    -ms-transform:rotateY( -90deg ) translateZ( 150px );
+        -o-transform:rotateY( -90deg ) translateZ( 150px );
+        transform:rotateY( -90deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(5){
+-webkit-transform:rotateX(  90deg ) translateZ( 150px );
+    -moz-transform:rotateX(  90deg ) translateZ( 150px );
+    -ms-transform:rotateX(  90deg ) translateZ( 150px );
+        -o-transform:rotateX(  90deg ) translateZ( 150px );
+        transform:rotateX(  90deg ) translateZ( 150px );
+}
+.three-d-item:nth-child(6){
+-webkit-transform:rotateX( -90deg ) translateZ( 150px );
+    -moz-transform:rotateX( -90deg ) translateZ( 150px );
+    -ms-transform:rotateX( -90deg ) translateZ( 150px );
+        -o-transform:rotateX( -90deg ) translateZ( 150px );
+        transform:rotateX( -90deg ) translateZ( 150px );
+}
+.a:checked ~ .three-d-cube{
+-webkit-transform:translateZ( -150px ) rotateY(    0deg );
+    -moz-transform:translateZ( -150px ) rotateY(    0deg );
+    -ms-transform:translateZ( -150px ) rotateY(    0deg );
+        -o-transform:translateZ( -150px ) rotateY(    0deg );
+        transform:translateZ( -150px ) rotateY(    0deg );
+}
+.b:checked ~ .three-d-cube{
+-webkit-transform:translateZ( -150px ) rotateX( -180deg );
+    -moz-transform:translateZ( -150px ) rotateX( -180deg );
+    -ms-transform:translateZ( -150px ) rotateX( -180deg );
+        -o-transform:translateZ( -150px ) rotateX( -180deg );
+        transform:translateZ( -150px ) rotateX( -180deg );
+}
+.c:checked ~ .three-d-cube{
+-webkit-transform:translateZ( -150px ) rotateY(  -90deg );
+    -moz-transform:translateZ( -150px ) rotateY(  -90deg );
+    -ms-transform:translateZ( -150px ) rotateY(  -90deg );
+        -o-transform:translateZ( -150px ) rotateY(  -90deg );
+        transform:translateZ( -150px ) rotateY(  -90deg );
+}
+.d:checked ~ .three-d-cube{
+-webkit-transform:translateZ( -150px ) rotateY(   90deg );
+    -moz-transform:translateZ( -150px ) rotateY(   90deg );
+    -ms-transform:translateZ( -150px ) rotateY(   90deg );
+        -o-transform:translateZ( -150px ) rotateY(   90deg );
+        transform:translateZ( -150px ) rotateY(   90deg );
+}
+.e:checked ~ .three-d-cube{
+-webkit-transform:translateZ( -150px ) rotateX(  -90deg );
+    -moz-transform:translateZ( -150px ) rotateX(  -90deg );
+    -ms-transform:translateZ( -150px ) rotateX(  -90deg );
+        -o-transform:translateZ( -150px ) rotateX(  -90deg );
+        transform:translateZ( -150px ) rotateX(  -90deg );
+}
+.f:checked ~ .three-d-cube{
+-webkit-transform:translateZ( -150px ) rotateX(   90deg );
+    -moz-transform:translateZ( -150px ) rotateX(   90deg );
+    -ms-transform:translateZ( -150px ) rotateX(   90deg );
+        -o-transform:translateZ( -150px ) rotateX(   90deg );
+        transform:translateZ( -150px ) rotateX(   90deg );
+}
+.three-d-bullet{
+margin:350px 10px 0 0;
+float:left;
+}
+.three-d-bullet:first-child{
+margin:350px 10px 0 88px;
+}
+
+.cute-button {
+    background-color: #a3a3a3; /* Light pink background */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Center-aligned text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the element an inline-block */
+    font-size: 16px; /* Set the font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 50px; /* Rounded corners */
+    transition: all 0.3s ease; /* Add a smooth transition */
     }
-    .three-d-cube{
-    width:100%;
-    height:100%;
-    position:absolute;
-    -webkit-transition:-webkit-transform 1s;
-       -moz-transition:   -moz-transform 1s;
-         -o-transition:     -o-transform 1s;
-            transition:        transform 1s;
-    -webkit-transform-style:preserve-3d;
-       -moz-transform-style:preserve-3d;
-        -ms-transform-style:preserve-3d;
-         -o-transform-style:preserve-3d;
-            transform-style:preserve-3d;
-    -webkit-transform:translateZ( -150px );
-       -moz-transform:translateZ( -150px );
-        -ms-transform:translateZ( -150px );
-         -o-transform:translateZ( -150px );
-            transform:translateZ( -150px );
+    
+    .cute-button:hover {
+    background-color: #0077b5; /* Darker pink on hover */
+    transform: scale(1.1); /* Scale up the button on hover */
     }
-    .three-d-cube .three-d-item{
-    width:100%;
-    height:100%;
-    display:block;
-    margin:0;
-    position:absolute;
+    
+    .cute-button:active {
+    transform: translateY(3px); /* Push the button down on click */
     }
-    .three-d-cube .three-d-item img{
-    width:100%;
-    height:100%;
-    display:block;
-    margin:0;
+    
+    .social-icons {
+    position: fixed; /* Make the icons fixed */
+    top: 50%; /* Center vertically */
+    right: 0; /* Stick to the right side of the page */
+    transform: translateY(-50%); /* Center vertically */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack the icons vertically */
+    align-items: center; /* Center horizontally */
+    z-index: 1; /*Show the icons above other content*/
     }
-    .three-d-item:nth-child(1){
-    -webkit-transform:rotateY(   0deg ) translateZ( 150px );
-       -moz-transform:rotateY(   0deg ) translateZ( 150px );
-        -ms-transform:rotateY(   0deg ) translateZ( 150px );
-         -o-transform:rotateY(   0deg ) translateZ( 150px );
-            transform:rotateY(   0deg ) translateZ( 150px );
+    
+    .icon {
+    width: 50px; /* Set a width for the icons */
+    height: 50px; /* Set a height for the icons */
+    background-color: #333; /* Gray background color */
+    border-radius: 50%; /* Make the icons circular */
+    display: flex; /* Use flexbox for vertical and horizontal alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Add some margin at the bottom */
+    transition: all 0.3s ease; /* Add a smooth transition */
+    position: sticky;
     }
-    .three-d-item:nth-child(2){
-    -webkit-transform:rotateX( 180deg ) translateZ( 150px );
-       -moz-transform:rotateX( 180deg ) translateZ( 150px );
-        -ms-transform:rotateX( 180deg ) translateZ( 150px );
-         -o-transform:rotateX( 180deg ) translateZ( 150px );
-            transform:rotateX( 180deg ) translateZ( 150px );
+    
+    .email-icon {
+    font-size: 23px;
+    color: white;
+    background-color: #FA6E4F; /* Facebook blue background color */
     }
-    .three-d-item:nth-child(3){
-    -webkit-transform:rotateY(  90deg ) translateZ( 150px );
-       -moz-transform:rotateY(  90deg ) translateZ( 150px );
-        -ms-transform:rotateY(  90deg ) translateZ( 150px );
-         -o-transform:rotateY(  90deg ) translateZ( 150px );
-            transform:rotateY(  90deg ) translateZ( 150px );
+    
+    .linkedin-icon {
+    font-size: 23px;
+    color: white;
+    background-color: #09203F; /* Twitter blue background color */
     }
-    .three-d-item:nth-child(4){
-    -webkit-transform:rotateY( -90deg ) translateZ( 150px );
-       -moz-transform:rotateY( -90deg ) translateZ( 150px );
-        -ms-transform:rotateY( -90deg ) translateZ( 150px );
-         -o-transform:rotateY( -90deg ) translateZ( 150px );
-            transform:rotateY( -90deg ) translateZ( 150px );
-    }
-    .three-d-item:nth-child(5){
-    -webkit-transform:rotateX(  90deg ) translateZ( 150px );
-       -moz-transform:rotateX(  90deg ) translateZ( 150px );
-        -ms-transform:rotateX(  90deg ) translateZ( 150px );
-         -o-transform:rotateX(  90deg ) translateZ( 150px );
-            transform:rotateX(  90deg ) translateZ( 150px );
-    }
-    .three-d-item:nth-child(6){
-    -webkit-transform:rotateX( -90deg ) translateZ( 150px );
-       -moz-transform:rotateX( -90deg ) translateZ( 150px );
-        -ms-transform:rotateX( -90deg ) translateZ( 150px );
-         -o-transform:rotateX( -90deg ) translateZ( 150px );
-            transform:rotateX( -90deg ) translateZ( 150px );
-    }
-    .a:checked ~ .three-d-cube{
-    -webkit-transform:translateZ( -150px ) rotateY(    0deg );
-       -moz-transform:translateZ( -150px ) rotateY(    0deg );
-        -ms-transform:translateZ( -150px ) rotateY(    0deg );
-         -o-transform:translateZ( -150px ) rotateY(    0deg );
-            transform:translateZ( -150px ) rotateY(    0deg );
-    }
-    .b:checked ~ .three-d-cube{
-    -webkit-transform:translateZ( -150px ) rotateX( -180deg );
-       -moz-transform:translateZ( -150px ) rotateX( -180deg );
-        -ms-transform:translateZ( -150px ) rotateX( -180deg );
-         -o-transform:translateZ( -150px ) rotateX( -180deg );
-            transform:translateZ( -150px ) rotateX( -180deg );
-    }
-    .c:checked ~ .three-d-cube{
-    -webkit-transform:translateZ( -150px ) rotateY(  -90deg );
-       -moz-transform:translateZ( -150px ) rotateY(  -90deg );
-        -ms-transform:translateZ( -150px ) rotateY(  -90deg );
-         -o-transform:translateZ( -150px ) rotateY(  -90deg );
-            transform:translateZ( -150px ) rotateY(  -90deg );
-    }
-    .d:checked ~ .three-d-cube{
-    -webkit-transform:translateZ( -150px ) rotateY(   90deg );
-       -moz-transform:translateZ( -150px ) rotateY(   90deg );
-        -ms-transform:translateZ( -150px ) rotateY(   90deg );
-         -o-transform:translateZ( -150px ) rotateY(   90deg );
-            transform:translateZ( -150px ) rotateY(   90deg );
-    }
-    .e:checked ~ .three-d-cube{
-    -webkit-transform:translateZ( -150px ) rotateX(  -90deg );
-       -moz-transform:translateZ( -150px ) rotateX(  -90deg );
-        -ms-transform:translateZ( -150px ) rotateX(  -90deg );
-         -o-transform:translateZ( -150px ) rotateX(  -90deg );
-            transform:translateZ( -150px ) rotateX(  -90deg );
-    }
-    .f:checked ~ .three-d-cube{
-    -webkit-transform:translateZ( -150px ) rotateX(   90deg );
-       -moz-transform:translateZ( -150px ) rotateX(   90deg );
-        -ms-transform:translateZ( -150px ) rotateX(   90deg );
-         -o-transform:translateZ( -150px ) rotateX(   90deg );
-            transform:translateZ( -150px ) rotateX(   90deg );
-    }
-    .three-d-bullet{
-    margin:350px 10px 0 0;
-    float:left;
-    }
-    .three-d-bullet:first-child{
-    margin:350px 10px 0 88px;
+    
+    .instagram-icon {
+    font-size: 23px;
+    color: white;
+    background-color: #c13584; /* Instagram pink background color */
     }
 
-    .cute-button {
-        background-color: #a3a3a3; /* Light pink background */
-        border: none; /* Remove border */
-        color: white; /* White text color */
-        padding: 15px 32px; /* Some padding */
-        text-align: center; /* Center-aligned text */
-        text-decoration: none; /* Remove underline */
-        display: inline-block; /* Make the element an inline-block */
-        font-size: 16px; /* Set the font size */
-        margin: 4px 2px; /* Add some margin */
-        cursor: pointer; /* Add a pointer cursor on hover */
-        border-radius: 50px; /* Rounded corners */
-        transition: all 0.3s ease; /* Add a smooth transition */
-      }
-      
-      .cute-button:hover {
-        background-color: #0077b5; /* Darker pink on hover */
-        transform: scale(1.1); /* Scale up the button on hover */
-      }
-      
-      .cute-button:active {
-        transform: translateY(3px); /* Push the button down on click */
-      }
-      
-      .social-icons {
-        position: fixed; /* Make the icons fixed */
-        top: 50%; /* Center vertically */
-        right: 0; /* Stick to the right side of the page */
-        transform: translateY(-50%); /* Center vertically */
-        display: flex; /* Use flexbox for vertical alignment */
-        flex-direction: column; /* Stack the icons vertically */
-        align-items: center; /* Center horizontally */
-        z-index: 1; /*Show the icons above other content*/
-      }
-      
-      .icon {
-        width: 50px; /* Set a width for the icons */
-        height: 50px; /* Set a height for the icons */
-        background-color: #333; /* Gray background color */
-        border-radius: 50%; /* Make the icons circular */
-        display: flex; /* Use flexbox for vertical and horizontal alignment */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        margin-bottom: 10px; /* Add some margin at the bottom */
-        transition: all 0.3s ease; /* Add a smooth transition */
-        position: sticky;
-      }
-      
-      .email-icon {
-        font-size: 23px;
-        color: white;
-        background-color: #FA6E4F; /* Facebook blue background color */
-      }
-      
-      .linkedin-icon {
-        font-size: 23px;
-        color: white;
-        background-color: #09203F; /* Twitter blue background color */
-      }
-      
-      .instagram-icon {
-        font-size: 23px;
-        color: white;
-        background-color: #c13584; /* Instagram pink background color */
-      }
-
-      .github-icon {
-        font-size: 23px;
-        color: white;
-        background-color: #000000; /* Instagram pink background color */
-      }
-      
-      .icon:hover {
-        transform: scale(1.1); /* Scale up the icons on hover */
-      }
+    .github-icon {
+    font-size: 23px;
+    color: white;
+    background-color: #000000; /* Instagram pink background color */
+    }
+    
+    .icon:hover {
+    transform: scale(1.1); /* Scale up the icons on hover */
+    }
       
       /* Media query to make the icons responsive */
-      @media (max-width: 767px) {
-        .social-icons {
+@media (max-width: 767px) {
+    .social-icons {
           top: auto; /* Remove the fixed positioning */
           bottom: 0; /* Stick to the bottom of the page */
           transform: none; /* Remove the translate */
         }
       }
       
-      .minimal-footer {
+.minimal-footer {
   background-color: #333; /* Dark background */
   color: #fff; /* White text color */
   text-align: center; /* Center-aligned text */
@@ -678,12 +678,79 @@ header.sticky ul li a{
   color: #eee; /* Lighter white on hover */
 }
 
+/* @media only screen and (max-width: 768px) {
+    .avatar{
+        max-width: 80px;
+        max-height: 80px;
+        border:rgb(205, 80, 80) 22px;
+        border-radius: 50%;
+
+        transition: .6s;
+        z-index: 99;
+    }
+    .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 5px 10px 0px rgb(221, 221, 221);
+        z-index: 1;
+    }
+    .experience-logo {
+        display: flex;
+        justify-content: space-between;
+    
+        margin: 0 10% 0 10%;
+    }
+    .card-about {
+        font-size: smaller;
+    }
+} */
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    /* Desktop Styles */
+
+    header {
+        justify-content: space-around;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .cover-page {
+        padding: 100px 0;
+    }
+
+    .line1 h1 {
+        font-size: 80px;
+    }
+
+    .to-center {
+        font-size: 24px;
+    }
+
+    .aboutme {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .aboutme-about {
+        width: 50%;
+    }
+
+    .profile-pic img {
+        max-width: 200px;
+    }
+}
+
 .about-tammy {
     /* background-image: linear-gradient(to right, #9E768F, #9FA4C4);  */
     /* background-image: linear-gradient(to right, #afafaf, #ffffff);  */
     padding-top: 5%;
     display: flex;
-    height: 90vh;
+    height: 80vh;
     justify-content:space-around;
 
     font-size: 17px;
@@ -695,17 +762,23 @@ header.sticky ul li a{
    line-height: 35px;
 }
 
-
+.h1-tammy {
+    margin: 0 35% 0;
+    font-size: 5vh;
+    transform: translateY(100px);
+    z-index: 1;
+}
 
 .avatar {
     max-width: 200px;
     max-height: 200px;
-    border:rgb(255, 255, 255) 2px;
+    border:rgb(205, 80, 80) 22px;
     /* border-radius: 77px; */
     border-radius: 50%;
 
     margin: 25px 30% 15% 30%;
     transition: .6s;
+    z-index: 99;
 }
 
 .avatar:hover {
@@ -735,7 +808,7 @@ header.sticky ul li a{
 
 .Experience {
     min-height: 115vh;
-    background-image: url(image/bg.png);
+    background-image: url(image/bg\ 2.png);
 }
 
 .experience-head {
@@ -778,14 +851,15 @@ header.sticky ul li a{
 }
 
 .card {
-    width: 210px;
+    /* width: 210px; */
+    width: 15%;
     height: 130px;
     margin: 0 auto;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 5px 10px 0px rgb(221, 221, 221);
     justify-content: center;
-    transition: .4s;
+    transition: .5s;
     z-index: 80;
 
 }
@@ -797,12 +871,12 @@ header.sticky ul li a{
 .hidden-text {
     color: #6e6e6e;
     opacity: 0;
-    transition: .6s;
+    transition: .8s;
     font-size: 16px;
 }
 
 .hidden-text p {
-    transform: translateY(-150px);
+    transform: translateY(-250px);
 }
 
 .hidden-text:hover{ 
@@ -894,4 +968,82 @@ header.sticky ul li a{
 
 .show {
     opacity: 1;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+
+header {
+    font-size: 16px;
+}
+header .logo {
+    font-size: 18px;
+}
+header img {
+    height: 60px;
+}
+header ul li {
+    padding-right: 15px;
+}
+.line1 h1 {
+    font-size: 30px;
+}
+.to-center {
+    top: 48%;
+    font-size: 20px;
+}
+.wrapper body {
+    font-size: 25px;
+}
+.wrapper .dynamic-texts {
+    line-height: 30px;
+    height: 25px;
+}
+.dynamic-texts li {
+    top: -160px;
+}
+.aboutme h1 {
+    font-size: 30px;
+}
+.aboutme-about {
+    font-size: 16px;
+}
+.sub {
+    font-size: 14px;
+}
+.profile-pic img {
+    height: 120px;
+}
+.content p {
+    line-height: 1cm;
+}
+.box {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.resume-link {
+    font-size: 14px;
+}
+.footer p {
+    font-size: 14px;
+}
+.footer .social a {
+    font-size: 20px;
+    line-height: 36px;
+}
+.topic {
+    padding: 10px 0 2px 0;
+}
+.box:nth-child(1) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.three-d-container {
+    margin: 20px auto 50px;
+    width: 200px;
+    height: 200px;
+}
+.three-d-cube .three-d-item:nth-child(1) {
+    transform: rotateY(0deg) translateZ(100px);
+}
 }
